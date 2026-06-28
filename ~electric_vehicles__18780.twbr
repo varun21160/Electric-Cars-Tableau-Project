@@ -19,465 +19,6 @@
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
-    <datasource caption='ev_india' inline='true' name='federated.1f0rsoo0svi37d0zl6tib1eim1t8' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='localhost' name='mysql.1gha16l0nw3d4r1ez320f0a2t6f4'>
-            <connection class='mysql' dbname='electric_cars' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
-          </named-connection>
-        </named-connections>
-        <relation connection='mysql.1gha16l0nw3d4r1ez320f0a2t6f4' name='ev_india' table='[ev_india]' type='table' />
-        <metadata-records>
-          <metadata-record class='column'>
-            <remote-name>Car</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Car]</local-name>
-            <parent-name>[ev_india]</parent-name>
-            <remote-alias>Car</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>262140</width>
-            <contains-null>true</contains-null>
-            <cast-to-local-type>true</cast-to-local-type>
-            <collation charset='296' flag='3' name='LROOT_S1' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-            </attributes>
-            <object-id>[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Style</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Style]</local-name>
-            <parent-name>[ev_india]</parent-name>
-            <remote-alias>Style</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>262140</width>
-            <contains-null>true</contains-null>
-            <cast-to-local-type>true</cast-to-local-type>
-            <collation charset='296' flag='3' name='LROOT_S1' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-            </attributes>
-            <object-id>[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Range</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Range]</local-name>
-            <parent-name>[ev_india]</parent-name>
-            <remote-alias>Range</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>262140</width>
-            <contains-null>true</contains-null>
-            <cast-to-local-type>true</cast-to-local-type>
-            <collation charset='296' flag='3' name='LROOT_S1' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-            </attributes>
-            <object-id>[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Transmission</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Transmission]</local-name>
-            <parent-name>[ev_india]</parent-name>
-            <remote-alias>Transmission</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>262140</width>
-            <contains-null>true</contains-null>
-            <cast-to-local-type>true</cast-to-local-type>
-            <collation charset='296' flag='3' name='LROOT_S1' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-            </attributes>
-            <object-id>[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>VehicleType</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[VehicleType]</local-name>
-            <parent-name>[ev_india]</parent-name>
-            <remote-alias>VehicleType</remote-alias>
-            <ordinal>5</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>262140</width>
-            <contains-null>true</contains-null>
-            <cast-to-local-type>true</cast-to-local-type>
-            <collation charset='296' flag='3' name='LROOT_S1' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-            </attributes>
-            <object-id>[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>PriceRange(Lakhs)</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[PriceRange(Lakhs)]</local-name>
-            <parent-name>[ev_india]</parent-name>
-            <remote-alias>PriceRange(Lakhs)</remote-alias>
-            <ordinal>6</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>15</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
-            </attributes>
-            <object-id>[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Capacity</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Capacity]</local-name>
-            <parent-name>[ev_india]</parent-name>
-            <remote-alias>Capacity</remote-alias>
-            <ordinal>7</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>262140</width>
-            <contains-null>true</contains-null>
-            <cast-to-local-type>true</cast-to-local-type>
-            <collation charset='296' flag='3' name='LROOT_S1' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-            </attributes>
-            <object-id>[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>BootSpace</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[BootSpace]</local-name>
-            <parent-name>[ev_india]</parent-name>
-            <remote-alias>BootSpace</remote-alias>
-            <ordinal>8</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>262140</width>
-            <contains-null>true</contains-null>
-            <cast-to-local-type>true</cast-to-local-type>
-            <collation charset='296' flag='3' name='LROOT_S1' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-            </attributes>
-            <object-id>[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>BaseModel</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[BaseModel]</local-name>
-            <parent-name>[ev_india]</parent-name>
-            <remote-alias>BaseModel</remote-alias>
-            <ordinal>9</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>262140</width>
-            <contains-null>true</contains-null>
-            <cast-to-local-type>true</cast-to-local-type>
-            <collation charset='296' flag='3' name='LROOT_S1' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-            </attributes>
-            <object-id>[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>TopModel</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[TopModel]</local-name>
-            <parent-name>[ev_india]</parent-name>
-            <remote-alias>TopModel</remote-alias>
-            <ordinal>10</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>262140</width>
-            <contains-null>true</contains-null>
-            <cast-to-local-type>true</cast-to-local-type>
-            <collation charset='296' flag='3' name='LROOT_S1' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-            </attributes>
-            <object-id>[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]</object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column caption='Base Model' datatype='string' name='[BaseModel]' role='dimension' type='nominal' />
-      <column caption='Boot Space' datatype='string' name='[BootSpace]' role='dimension' type='nominal' />
-      <column caption='Brand1' datatype='string' name='[Brand]' role='dimension' type='nominal' />
-      <column datatype='string' name='[Car]' role='dimension' type='nominal' />
-      <column caption='Top Model' datatype='string' name='[TopModel]' role='dimension' type='nominal' />
-      <column caption='TopSpeed KmH' datatype='integer' name='[TopSpeed_KmH]' role='measure' type='quantitative' />
-      <column caption='Vehicle Type' datatype='string' name='[VehicleType]' role='dimension' type='nominal' />
-      <column caption='charging_stations1' datatype='table' name='[__tableau_internal_object_id__].[charging_stations_3667863ED39F4485AEA315C6B20A8627]' role='measure' type='quantitative' />
-      <column caption='ev_india' datatype='table' name='[__tableau_internal_object_id__].[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]' role='measure' type='quantitative' />
-      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
-      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
-      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
-      <column caption='Service' datatype='string' name='[service]' role='dimension' type='nominal' />
-      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
-      <column-instance column='[Car]' derivation='None' name='[none:Car:nk]' pivot='key' type='nominal' />
-      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <style>
-        <style-rule element='mark'>
-          <encoding attr='color' field='[none:Car:nk]' type='palette'>
-            <map to='#499894'>
-              <bucket>&quot;Porsche Taycan&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;Audi E-Tron&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;Hyundai Kona Electric&quot;</bucket>
-            </map>
-            <map to='#86bcb6'>
-              <bucket>&quot;Tata Nexon EV&quot;</bucket>
-            </map>
-            <map to='#8cd17d'>
-              <bucket>&quot;Jaguar I-Pace&quot;</bucket>
-            </map>
-            <map to='#a0cbe8'>
-              <bucket>&quot;Audi E-Tron GT&quot;</bucket>
-            </map>
-            <map to='#b6992d'>
-              <bucket>&quot;Mercedes-Benz EQC&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;Tata Nexon EV Max&quot;</bucket>
-            </map>
-            <map to='#f1ce63'>
-              <bucket>&quot;MG ZS EV&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;BMW iX&quot;</bucket>
-            </map>
-            <map to='#ff9d9a'>
-              <bucket>&quot;Tata Tigor EV&quot;</bucket>
-            </map>
-            <map to='#ffbe7d'>
-              <bucket>&quot;BYD E6&quot;</bucket>
-            </map>
-          </encoding>
-        </style-rule>
-      </style>
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
-      </semantic-values>
-      <object-graph>
-        <objects>
-          <object caption='ev_india' id='ev_india_73D3559BE3DD43B692A3ACCBD10514CC'>
-            <properties context=''>
-              <relation connection='mysql.1gha16l0nw3d4r1ez320f0a2t6f4' name='ev_india' table='[ev_india]' type='table' />
-            </properties>
-          </object>
-        </objects>
-      </object-graph>
-    </datasource>
-    <datasource caption='charging_stations' inline='true' name='federated.0jes3fa0wtn7xo1a3brwz1fnuvj7' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='localhost' name='mysql.0i4wq8q13rbn0313jyhye16dobgz'>
-            <connection class='mysql' dbname='electric_cars' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
-          </named-connection>
-        </named-connections>
-        <relation connection='mysql.0i4wq8q13rbn0313jyhye16dobgz' name='charging_stations' table='[charging_stations]' type='table' />
-        <metadata-records>
-          <metadata-record class='column'>
-            <remote-name>region</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[region]</local-name>
-            <parent-name>[charging_stations]</parent-name>
-            <remote-alias>region</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>262140</width>
-            <contains-null>true</contains-null>
-            <cast-to-local-type>true</cast-to-local-type>
-            <collation charset='296' flag='3' name='LROOT_S1' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-            </attributes>
-            <object-id>[charging_stations_3667863ED39F4485AEA315C6B20A8627]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>address</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[address]</local-name>
-            <parent-name>[charging_stations]</parent-name>
-            <remote-alias>address</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>262140</width>
-            <contains-null>true</contains-null>
-            <cast-to-local-type>true</cast-to-local-type>
-            <collation charset='296' flag='3' name='LROOT_S1' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-            </attributes>
-            <object-id>[charging_stations_3667863ED39F4485AEA315C6B20A8627]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>aux addres</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[aux addres]</local-name>
-            <parent-name>[charging_stations]</parent-name>
-            <remote-alias>aux addres</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>262140</width>
-            <contains-null>true</contains-null>
-            <cast-to-local-type>true</cast-to-local-type>
-            <collation charset='296' flag='3' name='LROOT_S1' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-            </attributes>
-            <object-id>[charging_stations_3667863ED39F4485AEA315C6B20A8627]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>latitude</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[latitude]</local-name>
-            <parent-name>[charging_stations]</parent-name>
-            <remote-alias>latitude</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>15</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
-            </attributes>
-            <object-id>[charging_stations_3667863ED39F4485AEA315C6B20A8627]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>longitude</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[longitude]</local-name>
-            <parent-name>[charging_stations]</parent-name>
-            <remote-alias>longitude</remote-alias>
-            <ordinal>5</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>15</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
-            </attributes>
-            <object-id>[charging_stations_3667863ED39F4485AEA315C6B20A8627]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>type</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[type]</local-name>
-            <parent-name>[charging_stations]</parent-name>
-            <remote-alias>type</remote-alias>
-            <ordinal>6</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>262140</width>
-            <contains-null>true</contains-null>
-            <cast-to-local-type>true</cast-to-local-type>
-            <collation charset='296' flag='3' name='LROOT_S1' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-            </attributes>
-            <object-id>[charging_stations_3667863ED39F4485AEA315C6B20A8627]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>power</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[power]</local-name>
-            <parent-name>[charging_stations]</parent-name>
-            <remote-alias>power</remote-alias>
-            <ordinal>7</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>262140</width>
-            <contains-null>true</contains-null>
-            <cast-to-local-type>true</cast-to-local-type>
-            <collation charset='296' flag='3' name='LROOT_S1' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-            </attributes>
-            <object-id>[charging_stations_3667863ED39F4485AEA315C6B20A8627]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>service</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[service]</local-name>
-            <parent-name>[charging_stations]</parent-name>
-            <remote-alias>service</remote-alias>
-            <ordinal>8</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>262140</width>
-            <contains-null>true</contains-null>
-            <cast-to-local-type>true</cast-to-local-type>
-            <collation charset='296' flag='3' name='LROOT_S1' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-            </attributes>
-            <object-id>[charging_stations_3667863ED39F4485AEA315C6B20A8627]</object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column caption='Brand1' datatype='string' name='[Brand]' role='dimension' type='nominal' />
-      <column caption='Car1' datatype='string' name='[Car]' role='dimension' type='nominal' />
-      <column caption='TopSpeed KmH' datatype='integer' name='[TopSpeed_KmH]' role='measure' type='quantitative' />
-      <column caption='charging_stations' datatype='table' name='[__tableau_internal_object_id__].[charging_stations_3052745CC8664BEB85C7978FDE5DD7E6]' role='measure' type='quantitative' />
-      <column caption='charging_stations1' datatype='table' name='[__tableau_internal_object_id__].[charging_stations_3667863ED39F4485AEA315C6B20A8627]' role='measure' type='quantitative' />
-      <column caption='ev_india' datatype='table' name='[__tableau_internal_object_id__].[ev_india_10ED39305DB6472D8446900834E80FC5]' role='measure' type='quantitative' />
-      <column caption='Address' datatype='string' name='[address]' role='dimension' type='nominal' />
-      <column caption='Aux Addres' datatype='string' name='[aux addres]' role='dimension' type='nominal' />
-      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
-      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
-      <column caption='Power' datatype='string' name='[power]' role='dimension' type='nominal' />
-      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
-      <column caption='Service' datatype='string' name='[service]' role='dimension' type='nominal' />
-      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
-      <layout common-percentage='1' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' user-set-layout-v2='true' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
-      </semantic-values>
-      <object-graph>
-        <objects>
-          <object caption='charging_stations1' id='charging_stations_3667863ED39F4485AEA315C6B20A8627'>
-            <properties context=''>
-              <relation connection='mysql.0i4wq8q13rbn0313jyhye16dobgz' name='charging_stations' table='[charging_stations]' type='table' />
-            </properties>
-          </object>
-        </objects>
-      </object-graph>
-    </datasource>
     <datasource caption='electric_cars_data' inline='true' name='federated.0tix53805i9i6r1gtrcu70u12f9z' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -930,6 +471,468 @@
         </objects>
       </object-graph>
     </datasource>
+    <datasource caption='charging_stations' inline='true' name='federated.0jes3fa0wtn7xo1a3brwz1fnuvj7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='mysql.0i4wq8q13rbn0313jyhye16dobgz'>
+            <connection class='mysql' dbname='electric_cars' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <relation connection='mysql.0i4wq8q13rbn0313jyhye16dobgz' name='charging_stations' table='[charging_stations]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[charging_stations]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[charging_stations_3667863ED39F4485AEA315C6B20A8627]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>address</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[address]</local-name>
+            <parent-name>[charging_stations]</parent-name>
+            <remote-alias>address</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[charging_stations_3667863ED39F4485AEA315C6B20A8627]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aux addres</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[aux addres]</local-name>
+            <parent-name>[charging_stations]</parent-name>
+            <remote-alias>aux addres</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[charging_stations_3667863ED39F4485AEA315C6B20A8627]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[charging_stations]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[charging_stations_3667863ED39F4485AEA315C6B20A8627]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[charging_stations]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[charging_stations_3667863ED39F4485AEA315C6B20A8627]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[charging_stations]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[charging_stations_3667863ED39F4485AEA315C6B20A8627]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>power</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[power]</local-name>
+            <parent-name>[charging_stations]</parent-name>
+            <remote-alias>power</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[charging_stations_3667863ED39F4485AEA315C6B20A8627]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>service</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[service]</local-name>
+            <parent-name>[charging_stations]</parent-name>
+            <remote-alias>service</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[charging_stations_3667863ED39F4485AEA315C6B20A8627]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Body Style' datatype='string' name='[BodyStyle]' role='dimension' type='nominal' />
+      <column caption='Brand1' datatype='string' name='[Brand]' role='dimension' type='nominal' />
+      <column caption='Car1' datatype='string' name='[Car]' role='dimension' type='nominal' />
+      <column caption='Efficiency WhKm' datatype='integer' name='[Efficiency_WhKm]' role='measure' type='quantitative' />
+      <column caption='Power Train' datatype='string' name='[PowerTrain]' role='dimension' type='nominal' />
+      <column caption='TopSpeed KmH' datatype='integer' name='[TopSpeed_KmH]' role='measure' type='quantitative' />
+      <column caption='charging_stations' datatype='table' name='[__tableau_internal_object_id__].[charging_stations_3052745CC8664BEB85C7978FDE5DD7E6]' role='measure' type='quantitative' />
+      <column caption='charging_stations1' datatype='table' name='[__tableau_internal_object_id__].[charging_stations_3667863ED39F4485AEA315C6B20A8627]' role='measure' type='quantitative' />
+      <column caption='ev_india' datatype='table' name='[__tableau_internal_object_id__].[ev_india_10ED39305DB6472D8446900834E80FC5]' role='measure' type='quantitative' />
+      <column caption='Address' datatype='string' name='[address]' role='dimension' type='nominal' />
+      <column caption='Aux Addres' datatype='string' name='[aux addres]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Power' datatype='string' name='[power]' role='dimension' type='nominal' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+      <column caption='Service' datatype='string' name='[service]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <layout common-percentage='1' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' user-set-layout-v2='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='charging_stations1' id='charging_stations_3667863ED39F4485AEA315C6B20A8627'>
+            <properties context=''>
+              <relation connection='mysql.0i4wq8q13rbn0313jyhye16dobgz' name='charging_stations' table='[charging_stations]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='ev_india' inline='true' name='federated.1f0rsoo0svi37d0zl6tib1eim1t8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='mysql.1gha16l0nw3d4r1ez320f0a2t6f4'>
+            <connection class='mysql' dbname='electric_cars' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <relation connection='mysql.1gha16l0nw3d4r1ez320f0a2t6f4' name='ev_india' table='[ev_india]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Car</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Car]</local-name>
+            <parent-name>[ev_india]</parent-name>
+            <remote-alias>Car</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Style</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Style]</local-name>
+            <parent-name>[ev_india]</parent-name>
+            <remote-alias>Style</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Range</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Range]</local-name>
+            <parent-name>[ev_india]</parent-name>
+            <remote-alias>Range</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transmission</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Transmission]</local-name>
+            <parent-name>[ev_india]</parent-name>
+            <remote-alias>Transmission</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VehicleType</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[VehicleType]</local-name>
+            <parent-name>[ev_india]</parent-name>
+            <remote-alias>VehicleType</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PriceRange(Lakhs)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PriceRange(Lakhs)]</local-name>
+            <parent-name>[ev_india]</parent-name>
+            <remote-alias>PriceRange(Lakhs)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Capacity</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Capacity]</local-name>
+            <parent-name>[ev_india]</parent-name>
+            <remote-alias>Capacity</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BootSpace</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[BootSpace]</local-name>
+            <parent-name>[ev_india]</parent-name>
+            <remote-alias>BootSpace</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BaseModel</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[BaseModel]</local-name>
+            <parent-name>[ev_india]</parent-name>
+            <remote-alias>BaseModel</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TopModel</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[TopModel]</local-name>
+            <parent-name>[ev_india]</parent-name>
+            <remote-alias>TopModel</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Base Model' datatype='string' name='[BaseModel]' role='dimension' type='nominal' />
+      <column caption='Boot Space' datatype='string' name='[BootSpace]' role='dimension' type='nominal' />
+      <column caption='Brand1' datatype='string' name='[Brand]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Car]' role='dimension' type='nominal' />
+      <column caption='Top Model' datatype='string' name='[TopModel]' role='dimension' type='nominal' />
+      <column caption='TopSpeed KmH' datatype='integer' name='[TopSpeed_KmH]' role='measure' type='quantitative' />
+      <column caption='Vehicle Type' datatype='string' name='[VehicleType]' role='dimension' type='nominal' />
+      <column caption='charging_stations1' datatype='table' name='[__tableau_internal_object_id__].[charging_stations_3667863ED39F4485AEA315C6B20A8627]' role='measure' type='quantitative' />
+      <column caption='ev_india' datatype='table' name='[__tableau_internal_object_id__].[ev_india_73D3559BE3DD43B692A3ACCBD10514CC]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+      <column caption='Service' datatype='string' name='[service]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column-instance column='[Car]' derivation='None' name='[none:Car:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Car:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Porsche Taycan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Audi E-Tron&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Hyundai Kona Electric&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Tata Nexon EV&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Jaguar I-Pace&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Audi E-Tron GT&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Mercedes-Benz EQC&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Tata Nexon EV Max&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;MG ZS EV&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BMW iX&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Tata Tigor EV&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BYD E6&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='ev_india' id='ev_india_73D3559BE3DD43B692A3ACCBD10514CC'>
+            <properties context=''>
+              <relation connection='mysql.1gha16l0nw3d4r1ez320f0a2t6f4' name='ev_india' table='[ev_india]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
     <datasource caption='cheapest_ev_cars' inline='true' name='federated.1l1dhov14e9nd319trn7u0u039s5' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -1185,9 +1188,9 @@
       <table>
         <view>
           <datasources>
-            <datasource caption='ev_india' name='federated.1f0rsoo0svi37d0zl6tib1eim1t8' />
+            <datasource caption='charging_stations' name='federated.0jes3fa0wtn7xo1a3brwz1fnuvj7' />
           </datasources>
-          <datasource-dependencies datasource='federated.1f0rsoo0svi37d0zl6tib1eim1t8'>
+          <datasource-dependencies datasource='federated.0jes3fa0wtn7xo1a3brwz1fnuvj7'>
             <column caption='charging_stations1' datatype='table' name='[__tableau_internal_object_id__].[charging_stations_3667863ED39F4485AEA315C6B20A8627]' role='measure' type='quantitative' />
             <column-instance column='[__tableau_internal_object_id__].[charging_stations_3667863ED39F4485AEA315C6B20A8627]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:charging_stations_3667863ED39F4485AEA315C6B20A8627:qk]' pivot='key' type='quantitative' />
             <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
@@ -1205,7 +1208,7 @@
             </view>
             <mark class='Automatic' />
             <encodings>
-              <color column='[federated.1f0rsoo0svi37d0zl6tib1eim1t8].[none:type:nk]' />
+              <color column='[federated.0jes3fa0wtn7xo1a3brwz1fnuvj7].[none:type:nk]' />
             </encodings>
             <style>
               <style-rule element='mark'>
@@ -1216,12 +1219,19 @@
             </style>
           </pane>
         </panes>
-        <rows>[federated.1f0rsoo0svi37d0zl6tib1eim1t8].[__tableau_internal_object_id__].[cnt:charging_stations_3667863ED39F4485AEA315C6B20A8627:qk]</rows>
-        <cols>[federated.1f0rsoo0svi37d0zl6tib1eim1t8].[none:region:nk]</cols>
+        <rows>[federated.0jes3fa0wtn7xo1a3brwz1fnuvj7].[__tableau_internal_object_id__].[cnt:charging_stations_3667863ED39F4485AEA315C6B20A8627:qk]</rows>
+        <cols>[federated.0jes3fa0wtn7xo1a3brwz1fnuvj7].[none:region:nk]</cols>
       </table>
       <simple-id uuid='{B749CF9E-7052-475C-B777-A3E4B0155441}' />
     </worksheet>
     <worksheet name='02_EV_Charging_Stations_Map'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000'>EV Charging stations map of India</run>
+          </formatted-text>
+        </title>
+      </layout-options>
       <table>
         <view>
           <datasources>
@@ -1245,8 +1255,43 @@
           <aggregation value='true' />
         </view>
         <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0jes3fa0wtn7xo1a3brwz1fnuvj7].[avg:longitude:qk]' field-type='quantitative' max='11021755.935975254' min='7145883.2163858879' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0jes3fa0wtn7xo1a3brwz1fnuvj7].[avg:latitude:qk]' field-type='quantitative' max='4478935.3270850498' min='607726.67061174428' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
           <style-rule element='map'>
-            <format attr='washout' value='0.0' />
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
           </style-rule>
         </style>
         <panes>
@@ -1268,6 +1313,13 @@
       <simple-id uuid='{2A00515F-067D-489D-A21E-EF677AE75A0D}' />
     </worksheet>
     <worksheet name='03_Different_EV_Cars_in_India'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000'>Different EV Cars in India</run>
+          </formatted-text>
+        </title>
+      </layout-options>
       <table>
         <view>
           <datasources>
@@ -1315,6 +1367,13 @@
       <simple-id uuid='{AE618905-887E-4F40-B7A9-FA0655491C63}' />
     </worksheet>
     <worksheet name='04_Top_Speed_For_Different_Brands'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000'>Top Speed for Different Brands</run>
+          </formatted-text>
+        </title>
+      </layout-options>
       <table>
         <view>
           <datasources>
@@ -1442,6 +1501,13 @@
       <simple-id uuid='{62A8AA0C-7D90-4DB0-A850-EB6C1F0305CA}' />
     </worksheet>
     <worksheet name='07_Brands_According_To_BodyStyle'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Brands According to Body Style</run>
+          </formatted-text>
+        </title>
+      </layout-options>
       <table>
         <view>
           <datasources>
@@ -1490,6 +1556,13 @@
       <simple-id uuid='{1574585E-69E0-4ABA-8722-3323A156DD4E}' />
     </worksheet>
     <worksheet name='08_Brand_Filtered_By_PowerTrain'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000'>Brand Filtered by PowerTrain</run>
+          </formatted-text>
+        </title>
+      </layout-options>
       <table>
         <view>
           <datasources>
@@ -1547,7 +1620,7 @@
       <simple-id uuid='{1188B898-742E-491C-AC8D-3B197E63FF82}' />
     </worksheet>
   </worksheets>
-  <windows source-height='115'>
+  <windows saved-dpi-scale-factor='1.25' source-height='115'>
     <window class='worksheet' name='01_Charging_Stations_By_Region_and_Type'>
       <cards>
         <edge name='left'>
@@ -1576,7 +1649,7 @@
       </cards>
       <simple-id uuid='{529D3839-6FEB-47BD-B522-F831C4E47A7A}' />
     </window>
-    <window class='worksheet' maximized='true' name='02_EV_Charging_Stations_Map'>
+    <window class='worksheet' name='02_EV_Charging_Stations_Map'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1604,7 +1677,7 @@
       </cards>
       <simple-id uuid='{B74A76C9-085C-494C-B4F4-A437625A1998}' />
     </window>
-    <window class='worksheet' name='03_Different_EV_Cars_in_India'>
+    <window class='worksheet' maximized='true' name='03_Different_EV_Cars_in_India'>
       <cards>
         <edge name='left'>
           <strip size='160'>
