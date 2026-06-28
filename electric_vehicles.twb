@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='electric_cars (2)' inline='true' name='federated.15w76kv0bmvi5f1g92dtk0vwqmrc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='mysql.14gkfvx1nwy86u164odh9086izo4'>
+            <connection class='mysql' dbname='electric_cars' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph />
+    </datasource>
+    <datasource caption='electric_cars' inline='true' name='federated.0jes3fa0wtn7xo1a3brwz1fnuvj7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='mysql.0i4wq8q13rbn0313jyhye16dobgz'>
+            <connection class='mysql' dbname='electric_cars' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <aliases enabled='yes' />
+      <layout common-percentage='1' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' user-set-layout-v2='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='electric_cars' name='federated.0jes3fa0wtn7xo1a3brwz1fnuvj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jes3fa0wtn7xo1a3brwz1fnuvj7' />
+          <filter class='categorical' column='[federated.0jes3fa0wtn7xo1a3brwz1fnuvj7].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.0jes3fa0wtn7xo1a3brwz1fnuvj7].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{455486E9-7B7E-450F-B5F6-08D43A9F2391}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='58'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0jes3fa0wtn7xo1a3brwz1fnuvj7].[:Measure Names]</field>
+            <field>[federated.0jes3fa0wtn7xo1a3brwz1fnuvj7].[none:Brand:nk]</field>
+            <field>[federated.0jes3fa0wtn7xo1a3brwz1fnuvj7].[none:Model:nk]</field>
+            <field>[federated.0jes3fa0wtn7xo1a3brwz1fnuvj7].[none:PlugType:nk]</field>
+            <field>[federated.0jes3fa0wtn7xo1a3brwz1fnuvj7].[none:PowerTrain:nk]</field>
+            <field>[federated.0jes3fa0wtn7xo1a3brwz1fnuvj7].[none:PriceinUK:nk]</field>
+            <field>[federated.0jes3fa0wtn7xo1a3brwz1fnuvj7].[none:RapidCharge:nk]</field>
+            <field>[federated.0jes3fa0wtn7xo1a3brwz1fnuvj7].[none:Segment:nk]</field>
+            <field>[federated.0jes3fa0wtn7xo1a3brwz1fnuvj7].[none:address:nk]</field>
+            <field>[federated.0jes3fa0wtn7xo1a3brwz1fnuvj7].[none:aux addres:nk]</field>
+            <field>[federated.0jes3fa0wtn7xo1a3brwz1fnuvj7].[none:power:nk]</field>
+            <field>[federated.0jes3fa0wtn7xo1a3brwz1fnuvj7].[none:region:nk]</field>
+            <field>[federated.0jes3fa0wtn7xo1a3brwz1fnuvj7].[none:service:nk]</field>
+            <field>[federated.0jes3fa0wtn7xo1a3brwz1fnuvj7].[none:type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{902256C8-4549-442A-8CDB-99C122A8CF6D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAFP0lEQVR4nO3ba0/bZhyG8dvHHE0JlFLt+3+tVZrUaW2BkODE8SH2szdtN8q6FVSaLvf1
+      e2eTBz2Wcsn+GxGFEIIAU/FTF9INjsGTA9hsNt9zH8BBPDkA4BgQAKwRgI2g9epWbdf/66ea
+      XaWyLNV8/FzfNWr3g6Sgpmk1DPv//B3/J+mhN4AfpVdd91rf/a7zl+eqd42isFdIRkpCp10X
+      9PrVS739/a0uLy+17zrdXn/QLOvVji/Ub5bqhkSXF1O9/e1GZxdn2jeVsslcQ1spTnNV1U5n
+      Ly80ypJDX+w34w5gJE5ijbJM6/VKJ6cv1O6lrtmp64OyYa99FGk6nWs6irS6eq86pOo1qF4v
+      NV68UpbGkiKdnr9Us13rblOpqjaq6k7ttlScRNpWu0Nf5qNwB7ARa9/uNJoVKvJUaZwoTyOF
+      ZKyqXGk0KZRJKk5OFCWZFq8uVa5XyscnyucT3d1eaTydK04yTSbSOF8oyTbKRlNlaaI8iXS9
+      KjWdjA99oY8SPfUPYWVZqiiK770fHEDXdcqy7NDbOAgegWD75Zc+PgKFEDQMw6MWDsOgvj+e
+      twHw9HkGqOv6UQvbtn30GuBnk0pSFEWazWaPWjgMw6PXAD8bZgBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYuxdAGHrVdaMQwqH2A/xQ6d8P6vVSpXJ1
+      y5XOF3N1fVCzqzQ7OVW9uVOcT/SimB1qr8B39+ARaFqcKI4GXV1dK+62iqcLrW+u1PbStlwf
+      Yo/As7kXQJLnWl2912RW6HRxpklxqmZ9rXwy03azVjaaHGqfwLOIwrc88Iegumk1Ho8+nyrL
+      UkVRPOfegGf34BEoDMO9ITiEoKBI41HOcIyj8+At0Js3v2q5KhWGXtttpc3NB+36oGpb6nq5
+      OtQ+gWeRfnkiSTLtu1of3q3V7fcahlhjLZWkqfphOMQegWdzL4AojrVYLBQnsaKQa3W31enJ
+      VFGaa1dtNB7zChTH5duG4H/AEIxjcH8GCIFBF1a+eAsU9P7dH9o1rdpmp7rp1Pe92rbVdlOq
+      H4gDx+XBENzte90ub1RXWynJlWqvYj7V7Xav8abWL68vDrFP4Fk8CGA2n0shaOgaZZOZsiRS
+      Mc212txqPmcIxnH56hD86XQURX8dR5Gijz9nCMYxeHAH+OTTF/9rx8Ax4B9iYI0AYI0AYI0A
+      YI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0A
+      YI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0A
+      YI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0A
+      YI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYO1PT4B3
+      cw6H3vIAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
