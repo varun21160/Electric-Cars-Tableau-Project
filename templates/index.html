@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Cars Analytics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Segoe UI, Arial, sans-serif
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            background: #f4f8ff;
+            color: #1b2559
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 8%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+            z-index: 1000
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2b4cff
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1b2559;
+            margin: 0 14px;
+            font-weight: 600
+        }
+
+        .btn {
+            background: #2b4cff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none
+        }
+
+        .hero {
+            padding: 130px 8% 60px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(135deg, #eef4ff, #ffffff)
+        }
+
+        .hero-text {
+            max-width: 550px
+        }
+
+        .hero h1 {
+            font-size: 54px;
+            line-height: 1.2
+        }
+
+        .hero p {
+            margin: 20px 0;
+            font-size: 18px;
+            color: #555
+        }
+
+        .hero img {
+            width: 470px;
+            max-width: 100%
+        }
+
+        .section {
+            padding: 70px 8%
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 38px;
+            margin-bottom: 15px
+        }
+
+        .section p.center {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px
+        }
+
+        .card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, .08)
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #2b4cff
+        }
+
+        .embed {
+            background: #fff;
+            border-radius: 18px;
+            padding: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+            margin-bottom: 40px
+        }
+
+        footer {
+            background: #14213d;
+            color: #fff;
+            text-align: center;
+            padding: 25px
+        }
+
+        .placeholder {
+            padding:20px;
+            border-radius:12px;
+            overflow:hidden;
+            width:100%;
+            max-width:1600px;
+            margin:auto;
+            background:#fff
+        }
+    
+.tableauPlaceholder,.tableauViz{
+width:100%!important;
+max-width:100%!important;
+}
+.tableau-wrapper{
+width:100%;
+overflow-x:auto;
+}
+
+</style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">⚡ E-CarStart</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#story">Story</a>
+        </nav>
+        <a class="btn" href="#dashboard">Get Started</a>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Electric Vehicle Charge & Range Analytics</h1>
+            <p>Interactive analytics platform built using SQL, Tableau and Flask for exploring EV charging
+                infrastructure, performance and insights.</p>
+            <a class="btn" href="#dashboard">Explore Dashboard</a>
+        </div>
+        <img src="https://png.pngtree.com/png-vector/20240203/ourmid/pngtree-isometric-electric-car-ev-car-png-image_11533831.png" alt="EV">
+    </section>
+
+    <section class="section" id="about">
+        <h2>About the Project</h2>
+        <p class="center">This project analyzes electric vehicle data using MySQL, Tableau and Flask. Users can interact
+            with a live Tableau Dashboard and Story.</p>
+        <div class="cards">
+            <div class="card">
+                <h3>Database</h3>
+                <p>MySQL database with EV datasets.</p>
+            </div>
+            <div class="card">
+                <h3>Visualization</h3>
+                <p>10 Tableau worksheets, dashboard and story.</p>
+            </div>
+            <div class="card">
+                <h3>Deployment</h3>
+                <p>Flask web application with Tableau Public embedding.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="features">
+        <h2>Project Highlights</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Charging Stations</h3>
+            </div>
+            <div class="card">
+                <h3>Price Analysis</h3>
+            </div>
+            <div class="card">
+                <h3>Top Speed</h3>
+            </div>
+            <div class="card">
+                <h3>Efficiency</h3>
+            </div>
+            <div class="card">
+                <h3>Powertrain</h3>
+            </div>
+            <div class="card">
+                <h3>Body Style</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="dashboard">
+        <h2>Interactive Dashboard</h2>
+        <div class="embed">
+            <div class="tableau-wrapper">
+                <div class='tableauPlaceholder' id='viz1782736974217' style='position: relative'><noscript><a
+                            href='#'><img alt='Dashboard 1 '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;El&#47;Electric_Cars_Analytics_Dashboard&#47;Dashboard1&#47;1_rss.png'
+                                style='border: none' /></a></noscript>
+                    <object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='Electric_Cars_Analytics_Dashboard&#47;Dashboard1' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;El&#47;Electric_Cars_Analytics_Dashboard&#47;Dashboard1&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                        <param name='filter' value='publish=yes' />
+                    </object>
+                </div>
+                <script type='text/javascript'>
+                    var divElement=document.getElementById('viz1782736974217');
+var vizElement=divElement.getElementsByTagName('object')[0];
+vizElement.style.width='100%';
+vizElement.style.height='1800px';
+var scriptElement=document.createElement('script');
+scriptElement.src='https://public.tableau.com/javascripts/api/viz_v1.js';
+vizElement.parentNode.insertBefore(scriptElement,vizElement);                
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="story">
+        <h2>Interactive Story</h2>
+        <div class="embed">
+            <div class="tableau-wrapper">
+                <div class='tableauPlaceholder' id='viz1782737029540' style='position: relative'><noscript><a
+                            href='#'><img alt='Electric Cars Analytics Dashboard '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;YJ&#47;YJP8P3KGW&#47;1_rss.png'
+                                style='border: none' /></a>
+                    </noscript><object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='path' value='shared&#47;YJP8P3KGW' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;YJ&#47;YJP8P3KGW&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                        <param name='filter' value='publish=yes' />
+                    </object></div>
+                <script
+                    type='text/javascript'>                    var divElement=document.getElementById('viz1782737029540');
+var vizElement=divElement.getElementsByTagName('object')[0];
+vizElement.style.width='100%';
+vizElement.style.height='1800px';
+var scriptElement=document.createElement('script');
+scriptElement.src='https://public.tableau.com/javascripts/api/viz_v1.js';
+vizElement.parentNode.insertBefore(scriptElement,vizElement);                </script>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Electric Vehicle Charge & Range Analytics | Developed using SQL, Tableau & Flask</p>
+    </footer>
+
+</body>
+
+</html>
